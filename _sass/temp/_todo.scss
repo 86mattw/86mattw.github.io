@@ -1,0 +1,12 @@
+
+.todo {
+  width: 210px;
+  margin: 150px auto 0;
+  letter-spacing: 1px;
+
+  &__mark {
+    display: inline-block;
+    width: 12px;
+    text-align: center;
+  }
+}
