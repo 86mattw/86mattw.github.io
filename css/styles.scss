@@ -4,9 +4,27 @@
 // settings.
 @import 'settings/colours';
 @import 'settings/typography';
+@import 'settings/breakpoints';
+
+// tools.
+@import 'tools/breakpoint-mixins';
+@import 'tools/rem-mixin';
+@import 'tools/triangle-mixins';
+
+// generic.
+@import 'generic/box-sizing';
+@import 'generic/resets';
 
 // base.
 @import 'base/page';
+@import 'base/headings';
+@import 'base/links';
+@import 'base/paragraphs';
 
-// temp.
-@import 'temp/todo';
+// objects.
+@import 'objects/section-heading';
+@import 'objects/article-snippet';
+
+// components.
+@import 'components/header';
+@import 'components/main';

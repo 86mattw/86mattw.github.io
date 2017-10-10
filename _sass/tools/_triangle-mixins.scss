@@ -1,0 +1,28 @@
+
+@mixin triangle-down($size1, $size2, $colour) {
+  display: inline-block;
+  border-left: $size1 solid transparent;
+  border-right: $size1 solid transparent;
+  border-top: $size2 solid $colour;
+}
+
+@mixin triangle-up($size1, $size2, $colour) {
+  display: inline-block;
+  border-left: $size1 solid transparent;
+  border-right: $size1 solid transparent;
+  border-bottom: $size2 solid $colour;
+}
+
+@mixin triangle-left($size1, $size2, $colour) {
+  display: inline-block;
+  border-top: $size1 solid transparent;
+  border-bottom: $size1 solid transparent;
+  border-right: $size2 solid $colour;
+}
+
+@mixin triangle-right($size1, $size2, $colour) {
+  display: inline-block;
+  border-top: $size1 solid transparent;
+  border-bottom: $size1 solid transparent;
+  border-left: $size2 solid $colour;
+}

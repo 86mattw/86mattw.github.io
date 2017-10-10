@@ -1,0 +1,56 @@
+
+.header {
+  background-color: $primary-color;
+  color: $secondary-color;
+  padding: 10px;
+  margin-bottom: 10px;
+  position: relative;
+
+  @include tablet-up {
+    width: 240px;
+    height: 100vh;
+    padding: 20px;
+    margin-bottom: 0;
+  }
+
+  @include desktop {
+    width: 300px;
+  }
+
+  &__title {
+    padding-bottom: 5px;
+    text-align: right;
+  }
+
+  &__title-link {
+    color: $secondary-color;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &__nav-link {
+    color: $accent-color;
+    text-decoration: none;
+    display: block;
+    text-align: right;
+    margin-bottom: 10px;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &__dent {
+    position: absolute;
+    bottom: -10px;
+    left: calc(50% - 10px);
+    @include triangle-down(10px, 10px, $primary-color);
+
+    @include tablet-up {
+      display: none;
+    }
+  }
+}

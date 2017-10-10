@@ -1,10 +1,15 @@
 
 html {
-  color: $text-colour;
+  color: $primary-color;
   font-size: $base-font-size;
-  font-family: $base-font-family;
+  font-family: $copy-font-family;
+  font-weight: $copy-font-weight;
 }
 
 body {
-  background-color: $background-color;
+  background-color: $secondary-color;
+
+  @include tablet-up {
+    display: flex;
+  }
 }

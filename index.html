@@ -1,19 +1,14 @@
 ---
-# home page
+layout: default
 ---
 
-{% include header.html %}
+<h2 class="section-heading">Recent posts</h2>
 
-<div class="todo">
-    <p>
-        [<span class="todo__mark">x</span>] make website.
-    </p>
-    <p>
-        [<span class="todo__mark"></span>] ...
-    </p>
-    <p>
-        [<span class="todo__mark"></span>] profit.
-    </p>
-</div>
-
-{% include footer.html %}
+{% for post in site.posts limit:3 %}
+  <article class="article-snippet">
+    <a href="{{ post.url }}" class="article-snippet__link">
+      <h3 class="article-snippet__title">{{ post.title }}</h3>
+      {{ post.excerpt }}
+    </a>
+  </article>
+{% endfor %}
