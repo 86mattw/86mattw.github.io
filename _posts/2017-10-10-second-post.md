@@ -1,7 +1,7 @@
 ---
-layout: default
+layout: post
 title: Second post
-published: false
+#published: false
 ---
 
 This is the second post.

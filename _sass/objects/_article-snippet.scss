@@ -1,6 +1,7 @@
 
 .article-snippet {
   width: 80%;
+  max-width: $max-content-width;
   margin: 0 auto 30px;
   background-color: $white;
   border-left: 1px solid $accent-color;

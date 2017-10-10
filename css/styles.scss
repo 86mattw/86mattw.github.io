@@ -5,6 +5,7 @@
 @import 'settings/colours';
 @import 'settings/typography';
 @import 'settings/breakpoints';
+@import 'settings/sizing';
 
 // tools.
 @import 'tools/breakpoint-mixins';
@@ -28,3 +29,4 @@
 // components.
 @import 'components/header';
 @import 'components/main';
+@import 'components/post';
