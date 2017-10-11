@@ -1,6 +1,7 @@
 ---
 layout: post
 title: First post
+tags: blog 
 ---
 
 # header 1

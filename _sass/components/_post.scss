@@ -33,7 +33,7 @@
     }
 
     .highlight {
-      background-color: #fff7e8;
+      background-color: $highlight-color;
       margin: 0 0 20px;
       padding: 20px;
       @include rem(font-size, 14px);

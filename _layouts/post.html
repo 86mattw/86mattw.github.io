@@ -2,6 +2,13 @@
 
 <article class="post">
   <h1 class="section-heading">{{ page.title }}</h1>
+
+  <div class="tag-box">
+    {% for tag in page.tags %}
+      <a class="tag" href="/tag/{{ tag }}/">{{ tag }}</a>
+    {% endfor %}
+  </div>
+
   <section class="post__content">
     {{ content }}
   </section>
