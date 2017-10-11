@@ -15,7 +15,6 @@
 // generic.
 @import '02-generic/box-sizing';
 @import '02-generic/resets';
-@import '02-generic/item-width';
 
 // base.
 @import '03-base/page';
@@ -24,10 +23,12 @@
 @import '03-base/paragraphs';
 
 // objects.
+@import '04-objects/item';
 @import '04-objects/section-heading';
 @import '04-objects/article-snippet';
 @import '04-objects/tag-box';
 @import '04-objects/tag';
+@import '04-objects/content-box';
 
 // components.
 @import '05-components/header';
