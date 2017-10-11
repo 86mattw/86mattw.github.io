@@ -1,13 +1,7 @@
 
 .post {
-  &__title {
-    padding: 20px 0;
-    text-align: center;
-  }
-
   &__content {
-    width: 80%;
-    max-width: $max-content-width;
+    @extend %item-width;
     margin: 0 auto 30px;
     padding: 20px;
     background-color: $white;
@@ -36,6 +30,18 @@
     li {
       padding-left: 5px;
       margin-bottom: 5px;
+    }
+
+    .highlight {
+      background-color: #fff7e8;
+      margin: 0 0 20px;
+      padding: 20px;
+      @include rem(font-size, 14px);
+
+      pre {
+        margin: 0;
+        overflow-x: auto;
+      }
     }
   }
 }

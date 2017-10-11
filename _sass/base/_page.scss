@@ -8,8 +8,4 @@ html {
 
 body {
   background-color: $secondary-color;
-
-  @include tablet-up {
-    display: flex;
-  }
 }

@@ -15,6 +15,7 @@
 // generic.
 @import 'generic/box-sizing';
 @import 'generic/resets';
+@import 'generic/item-width';
 
 // base.
 @import 'base/page';
@@ -30,3 +31,4 @@
 @import 'components/header';
 @import 'components/main';
 @import 'components/post';
+@import 'components/syntax';

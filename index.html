@@ -9,7 +9,7 @@ title: Home
   <article class="article-snippet">
     <a href="{{ post.url }}" class="article-snippet__link">
       <h3 class="article-snippet__title">{{ post.title }}</h3>
-      {{ post.excerpt }}
+      <p>{{ post.excerpt | strip_html }}</p>
     </a>
   </article>
 {% endfor %}
