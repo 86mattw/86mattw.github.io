@@ -2,35 +2,35 @@
 ---
 
 // settings.
-@import 'settings/colours';
-@import 'settings/typography';
-@import 'settings/breakpoints';
-@import 'settings/sizing';
+@import '00-settings/colours';
+@import '00-settings/typography';
+@import '00-settings/breakpoints';
+@import '00-settings/sizing';
 
 // tools.
-@import 'tools/breakpoint-mixins';
-@import 'tools/rem-mixin';
-@import 'tools/triangle-mixins';
+@import '01-tools/breakpoint-mixins';
+@import '01-tools/rem-mixin';
+@import '01-tools/triangle-mixins';
 
 // generic.
-@import 'generic/box-sizing';
-@import 'generic/resets';
-@import 'generic/item-width';
+@import '02-generic/box-sizing';
+@import '02-generic/resets';
+@import '02-generic/item-width';
 
 // base.
-@import 'base/page';
-@import 'base/headings';
-@import 'base/links';
-@import 'base/paragraphs';
+@import '03-base/page';
+@import '03-base/headings';
+@import '03-base/links';
+@import '03-base/paragraphs';
 
 // objects.
-@import 'objects/section-heading';
-@import 'objects/article-snippet';
-@import 'objects/tag-box';
-@import 'objects/tag';
+@import '04-objects/section-heading';
+@import '04-objects/article-snippet';
+@import '04-objects/tag-box';
+@import '04-objects/tag';
 
 // components.
-@import 'components/header';
-@import 'components/main';
-@import 'components/post';
-@import 'components/syntax';
+@import '05-components/header';
+@import '05-components/main';
+@import '05-components/post';
+@import '05-components/syntax';
