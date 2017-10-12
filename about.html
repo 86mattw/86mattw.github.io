@@ -1,13 +1,69 @@
 ---
 layout: default
 title: About me
+dev-icons:
+  - title: JavaScript
+    path: javascript.svg
+  - title: ReactJS
+    path: react.svg
+  - title: CSS3
+    path: css3.svg
+  - title: HTML5
+    path: html5.svg
+  - title: Babel
+    path: babel.svg
+  - title: Gulp
+    path: gulp.svg
+  - title: Node
+    path: node.svg
+  - title: Webpack
+    path: webpack.svg
+  - title: SASS
+    path: sass.svg
+  - title: Bootstrap
+    path: bootstrap.svg
+  - title: Mocha
+    path: mocha.svg
+  - title: Docker
+    path: docker.svg
+  - title: AWS
+    path: aws.svg
+  - title: PHP
+    path: php.svg
 ---
 
 <h1 class="section-heading">{{ page.title }}</h1>
 
 <div class="content-box">
   <p>
-    I've been a front-end developer for over 5 years. In that time I've worked for a number of well known brands such as
+    I've been a web developer for over 5 years and in that time I've worked for a number of well known brands such as
     the Radio Times and the Royal Opera House.
   </p>
+
+  <p>
+    I specialise in front-end architecture and have experience in building component libraries and style guides.
+  </p>
+
+  <p>
+    I enjoy keeping things simple and prefer writing functionality in vanilla JavaScript, especially since the 
+    improvements to the specification made in ES2015.
+  </p>
+
+  <p>
+    For more complex user interfaces I've started using React and really appreciate how powerful it is for building 
+    reusable components.
+  </p>
+</div>
+
+<h2 class="section-heading">More skills</h2>
+
+<div class="content-box">
+  <p>
+    Here's a big list of some of the technologies I'm familiar with.
+  </p>
+
+  {% for icon in page.dev-icons %}
+    <p>{% include {{ icon.path | prepend: 'dev-icons/' }} %}</p>
+    <p>{{ icon.title }}</p>
+  {% endfor %}
 </div>
