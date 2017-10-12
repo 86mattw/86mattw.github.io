@@ -1,0 +1,11 @@
+<svg enable-background="new 0 0 32 32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" class="icon-document">
+  <g>
+    <rect fill="none" height="32" width="32"/>
+  </g>
+  <g>
+    <polygon points="4,22 4,20 16,20 16,22 4,22  "/>
+    <polygon points="4,14 4,12 20,12 20,14 4,14  "/>
+    <polygon points="4,18 4,16 20,16 20,18 4,18  "/>
+    <path d="M18.414,0H0v32h24V5.584L18.414,0z M17.998,2.413L21.586,6h-3.588V2.413z M2,30V1.998h14v6.001h6V30H2z"/>
+  </g>
+</svg>

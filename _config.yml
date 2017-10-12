@@ -1,3 +1,8 @@
+defaults:
+  - scope:
+      path: "cv"
+    values:
+      cv: true
 sass:
   style: compressed
 permalink: pretty

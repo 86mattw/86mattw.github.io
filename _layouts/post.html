@@ -5,7 +5,7 @@
 
   <div class="tag-box">
     {% for tag in page.tags %}
-      <a class="tag" href="/tag/{{ tag }}/">{{ tag }}</a>
+      {% include tag-link.html name=tag %}
     {% endfor %}
   </div>
 

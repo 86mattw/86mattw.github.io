@@ -1,35 +1,6 @@
 ---
 layout: default
 title: About me
-dev-icons:
-  - title: JavaScript
-    path: javascript.svg
-  - title: ReactJS
-    path: react.svg
-  - title: CSS3
-    path: css3.svg
-  - title: HTML5
-    path: html5.svg
-  - title: Babel
-    path: babel.svg
-  - title: Gulp
-    path: gulp.svg
-  - title: Node
-    path: node.svg
-  - title: Webpack
-    path: webpack.svg
-  - title: SASS
-    path: sass.svg
-  - title: Bootstrap
-    path: bootstrap.svg
-  - title: Mocha
-    path: mocha.svg
-  - title: Docker
-    path: docker.svg
-  - title: AWS
-    path: aws.svg
-  - title: PHP
-    path: php.svg
 ---
 
 <h1 class="section-heading">{{ page.title }}</h1>
@@ -58,12 +29,24 @@ dev-icons:
 <h2 class="section-heading">More skills</h2>
 
 <div class="content-box">
-  <p>
-    Here's a big list of some of the technologies I'm familiar with.
-  </p>
+  <div class="dev-icons">
+    {% for icon in site.data.dev-icons %}
+      <div class="dev-icons__item text-center">
+        {% include {{ icon.path | prepend: 'dev-icons/' }} %}
+        <span class="dev-icons__title">{{ icon.title }}</span>
+      </div>
+    {% endfor %}
+  </div>
+</div>
 
-  {% for icon in page.dev-icons %}
-    <p>{% include {{ icon.path | prepend: 'dev-icons/' }} %}</p>
-    <p>{{ icon.title }}</p>
+<h2 class="section-heading">Want my full CV?</h2>
+
+<div class="content-box text-center">
+  {% assign cv_files = site.static_files | where: "cv", true %}
+  {% for cv in cv_files %}
+    <a href="{{ cv.path }}" target="_blank" class="cv-link">
+      {% include icons/document.svg %}
+      {{ cv.basename }}
+    </a>
   {% endfor %}
 </div>

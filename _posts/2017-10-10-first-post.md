@@ -1,7 +1,7 @@
 ---
 layout: post
 title: First post
-tags: blog 
+tags: blog
 ---
 
 # header 1

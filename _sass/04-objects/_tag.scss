@@ -1,13 +1,14 @@
 
 .tag {
   display: inline-block;
-  border: 1px solid $accent-color;
   padding: 5px 10px;
   margin: 0 0 10px 10px;
   background-color: $highlight-color;
   text-decoration: none;
+  font-weight: bold;
+  @include rem(font-size, 16px);
 
   &:hover {
-    border-color: $primary-color;
+    text-decoration: underline;
   }
 }

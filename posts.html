@@ -5,11 +5,10 @@ title: Posts
 
 <h1 class="section-heading">{{ page.title }}</h1>
 
-<h2 class="section-heading">All tags</h2>
-
 <div class="tag-box">
   {% for tag in site.tags %}
-    <a class="tag" href="/tag/{{ tag | first }}/">{{ tag | first }}</a>
+    {% assign tag_name = tag | first %}
+    {% include tag-link.html name=tag_name %}
   {% endfor %}
 </div>
 
