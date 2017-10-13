@@ -1,0 +1,17 @@
+---
+layout: default
+---
+
+<h1 class="section-heading">{{ page.title }}</h1>
+
+{% assign post_count = site.tags[page.tag] | size %}
+{% include post-count.html count=post_count %}
+
+{% for post in site.tags[page.tag] %}
+<article class="article-snippet">
+  <a href="{{ post.url }}" class="article-snippet__link">
+    <h3 class="article-snippet__title">{{ post.title }}</h3>
+    <p>{{ post.excerpt | strip_html }}</p>
+  </a>
+</article>
+{% endfor %}

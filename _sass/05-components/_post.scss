@@ -1,0 +1,47 @@
+
+.post {
+  &__content {
+    @extend %item-width;
+    margin: 0 auto 30px;
+    padding: 20px;
+    background-color: $white;
+    border-left: 1px solid $accent-color;
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      margin-bottom: 20px;
+    }
+
+    p {
+      margin-bottom: 20px;
+    }
+
+    ul,
+    ol {
+      margin-top: 0;
+      margin-bottom: 20px;
+      padding-left: 30px;
+    }
+
+    li {
+      padding-left: 5px;
+      margin-bottom: 5px;
+    }
+
+    .highlight {
+      background-color: $highlight-color;
+      margin: 0 0 20px;
+      padding: 20px;
+      @include rem(font-size, 14px);
+
+      pre {
+        margin: 0;
+        overflow-x: auto;
+      }
+    }
+  }
+}

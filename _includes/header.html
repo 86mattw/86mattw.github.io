@@ -3,12 +3,28 @@
 <html>
 
 <head>
-    <title>86mattw</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+  <link href="https://fonts.googleapis.com/css?family=Lato:300|Noto+Serif" rel="stylesheet">
+  <link rel="stylesheet" href="{{ site.github.url }}/css/styles.css" />
 
-    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-    <link rel="stylesheet" href="{{ site.github.url }}/css/styles.css" />
+  <title>{{ page.title }} | Matt Wilson</title>
+  <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">  
 </head>
 
 <body>
+
+<header class="header">
+  <h1 class="header__title">
+      <a class="header__title-link" href="/">Matt Wilson</a>
+  </h1>
+
+  <nav class="header__nav">
+    <a href="/about" class="header__nav-link">About</a>
+    <a href="/posts" class="header__nav-link">Posts</a>
+  </nav>
+</header>
+
+<div class="main">
+  

@@ -2,11 +2,39 @@
 ---
 
 // settings.
-@import 'settings/colours';
-@import 'settings/typography';
+@import '00-settings/colours';
+@import '00-settings/typography';
+@import '00-settings/breakpoints';
+@import '00-settings/sizing';
+
+// tools.
+@import '01-tools/breakpoint-mixins';
+@import '01-tools/rem-mixin';
+@import '01-tools/triangle-mixins';
+
+// generic.
+@import '02-generic/box-sizing';
+@import '02-generic/resets';
 
 // base.
-@import 'base/page';
+@import '03-base/page';
+@import '03-base/headings';
+@import '03-base/links';
+@import '03-base/paragraphs';
 
-// temp.
-@import 'temp/todo';
+// objects.
+@import '04-objects/item';
+@import '04-objects/text-align';
+@import '04-objects/section-heading';
+@import '04-objects/article-snippet';
+@import '04-objects/tag-box';
+@import '04-objects/tag';
+@import '04-objects/content-box';
+
+// components.
+@import '05-components/header';
+@import '05-components/main';
+@import '05-components/post';
+@import '05-components/syntax';
+@import '05-components/dev-icons';
+@import '05-components/cv-link';

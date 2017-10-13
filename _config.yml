@@ -1,0 +1,28 @@
+defaults:
+  # layout for posts
+  - scope: 
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  # layout for pages
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"
+  # layout for tag pages
+  - scope:
+      path: "tag"
+      type: "pages"
+    values:
+      layout: "tag"
+  # front matter for CV files
+  - scope:
+      path: "cv"
+    values:
+      cv: true
+description: "The thoughts and experiences of Matt Wilson - UK based front-end developer."
+sass:
+  style: compressed
+permalink: pretty

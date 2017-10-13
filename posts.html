@@ -1,0 +1,25 @@
+---
+title: All posts
+description: A complete list of all posts found on this site.
+---
+
+<h1 class="section-heading">{{ page.title }}</h1>
+
+<div class="tag-box">
+  {% for tag in site.tags %}
+    {% assign tag_name = tag | first %}
+    {% include tag-link.html name=tag_name %}
+  {% endfor %}
+</div>
+
+{% assign post_count = site.posts | size %}
+{% include post-count.html count=post_count %}
+
+{% for post in site.posts %}
+<article class="article-snippet">
+  <a href="{{ post.url }}" class="article-snippet__link">
+    <h3 class="article-snippet__title">{{ post.title }}</h3>
+    <p>{{ post.excerpt | strip_html }}</p>
+  </a>
+</article>
+{% endfor %}

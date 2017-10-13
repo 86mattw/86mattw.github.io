@@ -1,0 +1,13 @@
+
+.main {
+  @include tablet-up {
+    width: 100%;
+    padding-left: map-get($header-width, md);
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  @include desktop {
+    padding-left: map-get($header-width, lg);
+  }
+}

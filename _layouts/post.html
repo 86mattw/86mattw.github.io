@@ -1,0 +1,17 @@
+{% include header.html %}
+
+<article class="post">
+  <h1 class="section-heading">{{ page.title }}</h1>
+
+  <div class="tag-box">
+    {% for tag in page.tags %}
+      {% include tag-link.html name=tag %}
+    {% endfor %}
+  </div>
+
+  <section class="post__content">
+    {{ content }}
+  </section>
+</article>
+
+{% include footer.html %}

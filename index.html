@@ -1,19 +1,28 @@
 ---
-# home page
+title: Home
 ---
 
-{% include header.html %}
+<h2 class="section-heading">What's this?</h2>
 
-<div class="todo">
-    <p>
-        [<span class="todo__mark">x</span>] make website.
-    </p>
-    <p>
-        [<span class="todo__mark"></span>] ...
-    </p>
-    <p>
-        [<span class="todo__mark"></span>] profit.
-    </p>
+<div class="content-box">
+  <p>
+    This is a place for me to share my thoughts and experiences from working in the web development industry.
+  </p>
+  <p>
+    It's also a space to collate useful information, tips and tutorials.
+  </p>
+  <p>
+    The site is built with Jekyll and hosted on Github Pages.
+  </p>
 </div>
 
-{% include footer.html %}
+<h2 class="section-heading">Recent posts</h2>
+
+{% for post in site.posts limit:3 %}
+  <article class="article-snippet">
+    <a href="{{ post.url }}" class="article-snippet__link">
+      <h3 class="article-snippet__title">{{ post.title }}</h3>
+      <p>{{ post.excerpt | strip_html }}</p>
+    </a>
+  </article>
+{% endfor %}
