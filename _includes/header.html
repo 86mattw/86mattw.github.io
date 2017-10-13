@@ -3,13 +3,14 @@
 <html>
 
 <head>
-  <title>{{ page.title }} | Matt Wilson</title>
-
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <link rel="icon" href="/favicon.ico" type="image/x-icon" />
   <link href="https://fonts.googleapis.com/css?family=Lato:300|Noto+Serif" rel="stylesheet">
   <link rel="stylesheet" href="{{ site.github.url }}/css/styles.css" />
+
+  <title>{{ page.title }} | Matt Wilson</title>
+  <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">  
 </head>
 
 <body>

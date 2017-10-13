@@ -1,6 +1,6 @@
 ---
-layout: default
-title: Posts
+title: All posts
+description: A complete list of all posts found on this site.
 ---
 
 <h1 class="section-heading">{{ page.title }}</h1>
@@ -11,8 +11,6 @@ title: Posts
     {% include tag-link.html name=tag_name %}
   {% endfor %}
 </div>
-
-<h2 class="section-heading">All posts</h2>
 
 {% for post in site.posts %}
 <article class="article-snippet">
