@@ -3,71 +3,17 @@ title: First post
 tags: blog
 ---
 
-# header 1
+This is the first blog post for my new site. 
 
-## header 2
+It's something of a 'Hello World' to help me get my post pages set up and styled.
 
-### header 3
+This is a simple static site built using Jekyll and hosted on Github Pages. I hadn't used Jekyll before so this was
+a nice opportunity to try out a new technology and see what I could do with it. So far I'm pretty impressed with Jekyll
+and the flexibility it gives you.
 
-#### header 4
+I'm also loving the simplicity of the deployment process. All I have to do is push to the master branch of my repo and
+usually within minutes the updated site is live. At some point I'll likely set up a custom domain instead of using the 
+default one Github assigns you, but for the time being I'm enjoying having a basic website which costs me nothing to
+run.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-
-[This is a link](http://google.com)
-
-This is a list:
-- something
-- another thing here
-- one last thing
-
-This is a numbered list:
-
-1. something
-1. something else
-1. another thing
-
-{% highlight javascript %}
-// this is a comment.
-const something = 123;
-console.log('something here');
-
-const f = function() {
-  return 1 + 2 % 0;
-}
-
-const f2 = (props) => {
-  const a = 1;
-  const b = {
-    ha: 123,
-    ho: 456
-  }
-
-  return a + b.ha + b['ho'];
-}
-{% endhighlight %}
-
-{% highlight css %}
-.something {
-  font-size: 12px;
-  color: red;
-}
-
-.another {
-  background: url('some.png');
-  height: 100%;
-}
-{% endhighlight %}
-
-{% highlight html %}
-<div class="something">
-  <img src="something.png" class="imaaage" />
-</div>
-{% endhighlight %}
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+A more detailed post on my setup should follow shortly...

@@ -12,6 +12,9 @@ description: A complete list of all posts found on this site.
   {% endfor %}
 </div>
 
+{% assign post_count = site.posts | size %}
+{% include post-count.html count=post_count %}
+
 {% for post in site.posts %}
 <article class="article-snippet">
   <a href="{{ post.url }}" class="article-snippet__link">
