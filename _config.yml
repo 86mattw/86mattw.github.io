@@ -24,7 +24,10 @@ defaults:
       cv: true
 description: "The thoughts and experiences of Matt Wilson - UK based front-end developer."
 exclude: ['README.md']
+markdown: kramdown
+highlighter: rouge
 kramdown:
+  input: GFM
   syntax_highlighter: rouge
 sass:
   style: compressed
