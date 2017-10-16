@@ -21,9 +21,9 @@ want to risk it the second time around.
 Eventually I went with the "Installation via RubyInstaller" approach. This allowed me to use Ruby without having to do 
 anything with Windows Subsystems. Once it was all set up getting Jekyll installed was as easy as running
 
-```shell
+~~~ shell
 gem install jekyll bundler
-```
+~~~
 
 ### Deploying to Github Pages
 
@@ -37,7 +37,7 @@ My site is pretty basic so far and I've been using default conventions where pos
 _sass folder. Here I've used the ITCSS method to manage the hierarchy. Additional settings have been added to the 
 _config.yml, which currently looks like this:
 
-```yaml
+~~~ yaml
 defaults:
   - scope: 
       path: ""
@@ -62,7 +62,7 @@ description: "The thoughts and experiences of ..."
 sass:
   style: compressed
 permalink: pretty
-```
+~~~
 
 The defaults allow me to set common variables for different page types. Here I'm setting which layout should be used for
 each. I'm also adding the variable cv:true to anything inside the cv folder. This is how you get around not being
