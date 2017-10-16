@@ -24,6 +24,8 @@ defaults:
       cv: true
 description: "The thoughts and experiences of Matt Wilson - UK based front-end developer."
 exclude: ['README.md']
+kramdown:
+  syntax_highlighter: rouge
 sass:
   style: compressed
 permalink: pretty
