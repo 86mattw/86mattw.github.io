@@ -2,7 +2,7 @@
 .post {
   &__content {
     @extend %item-width;
-    margin: 0 auto 30px;
+    margin: 0 auto $vertical-spacing;
     padding: 20px;
     background-color: $white;
     border-left: 1px solid $accent-color;
@@ -13,17 +13,13 @@
     h4,
     h5,
     h6 {
-      margin-bottom: 20px;
-    }
-
-    p {
-      margin-bottom: 20px;
+      margin-bottom: $vertical-spacing;
     }
 
     ul,
     ol {
       margin-top: 0;
-      margin-bottom: 20px;
+      margin-bottom: $vertical-spacing;
       padding-left: 30px;
     }
 
@@ -34,8 +30,8 @@
 
     .highlight {
       background-color: $highlight-color;
-      margin: 0 0 20px;
-      padding: 20px;
+      margin: 0 0 $vertical-spacing;
+      padding: 10px;
       @include rem(font-size, 14px);
 
       pre {
