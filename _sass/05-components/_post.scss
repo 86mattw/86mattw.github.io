@@ -28,16 +28,12 @@
       margin-bottom: 5px;
     }
 
-    .highlight {
+    pre.highlight {
       background-color: $highlight-color;
       margin: 0 0 $vertical-spacing;
-      padding: 10px;
+      padding: 20px;
+      overflow-x: auto;
       @include rem(font-size, 14px);
-
-      pre {
-        margin: 0;
-        overflow-x: auto;
-      }
     }
   }
 }
