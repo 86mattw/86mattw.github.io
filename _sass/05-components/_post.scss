@@ -35,5 +35,9 @@
       overflow-x: auto;
       @include rem(font-size, 14px);
     }
+
+    code.highlighter-rouge {
+      @include rem(font-size, 14px);
+    }
   }
 }
