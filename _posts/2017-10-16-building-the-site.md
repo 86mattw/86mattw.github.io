@@ -1,5 +1,6 @@
 ---
 title: Building the site
+description: A brief walk-through of how I got this site working
 tags: blog jekyll
 ---
 
