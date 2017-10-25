@@ -31,7 +31,8 @@ title: About me
   <div class="dev-icons">
     {% for icon in site.data.dev-icons %}
       <div class="dev-icons__item text-center">
-        {% include {{ icon.path | prepend: 'dev-icons/' }} %}
+        {% capture icon_classes %}icon--{{ icon.class }} dev-icons__icon{% endcapture %}
+        {% include {{ icon.path | prepend: 'icons/' }} classes=icon_classes %}
         <span class="dev-icons__title">{{ icon.title }}</span>
       </div>
     {% endfor %}
@@ -44,7 +45,7 @@ title: About me
   {% assign cv_files = site.static_files | where: "cv", true %}
   {% for cv in cv_files %}
     <a href="{{ cv.path }}" target="_blank" class="cv-link">
-      {% include icons/document.svg %}
+      {% include icons/document.svg classes="cv-link__icon" %}
       {{ cv.basename }}
     </a>
   {% endfor %}

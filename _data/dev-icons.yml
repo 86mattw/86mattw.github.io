@@ -1,32 +1,48 @@
 - title: JavaScript
+  class: js
   path: javascript.svg
 - title: ReactJS
+  class: react
   path: react.svg
 - title: CSS3
+  class: css3
   path: css3.svg
 - title: HTML5
+  class: html5
   path: html5.svg
 - title: Node
+  class: node
   path: node.svg
 - title: Babel
+  class: babel
   path: babel.svg
 - title: Gulp
+  class: gulp
   path: gulp.svg
 - title: Webpack
+  class: webpack
   path: webpack.svg
 - title: Grunt
+  class: grunt
   path: grunt.svg
 - title: SASS
+  class: sass
   path: sass.svg
 - title: Bootstrap
+  class: bootstrap
   path: bootstrap.svg
 - title: Mocha
+  class: mocha
   path: mocha.svg
 - title: Git
+  class: git
   path: git.svg
 - title: Docker
+  class: docker
   path: docker.svg
 - title: AWS
+  class: aws
   path: aws.svg
 - title: PHP
+  class: php
   path: php.svg
