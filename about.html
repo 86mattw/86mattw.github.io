@@ -29,7 +29,7 @@ title: About me
 
 <div class="content-box">
   <div class="dev-icons">
-    {% for icon in site.data.dev-icons %}
+    {% for icon in site.data.dev_icons %}
       <div class="dev-icons__item text-center">
         {% capture icon_classes %}icon--{{ icon.class }} dev-icons__icon{% endcapture %}
         {% include {{ icon.path | prepend: 'icons/' }} classes=icon_classes %}
