@@ -1,5 +1,6 @@
 ---
-title: Understanding Currying in JavaScript
+title: Understanding currying in JavaScript
+description: A simple explanation of how currying in javascript works.
 tags: javascript redux
 ---
 

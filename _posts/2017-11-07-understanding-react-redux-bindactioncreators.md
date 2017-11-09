@@ -1,5 +1,6 @@
 ---
 title: Understanding react-redux bindActionCreators
+description: Breaking down the bindActionCreators method from react-redux
 tags: react redux
 ---
 
